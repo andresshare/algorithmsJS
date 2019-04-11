@@ -225,3 +225,93 @@ function addFriend(userObj, friend) {
 console.log(addFriend(user, 'Pete'));
 
 ```
+
+#ALGORITHMSJS
+
+# Celsius to Fahrenheit
+
+```
+function convertToF(celsius) {
+  let fahrenheit = (celsius * 1.8) + 32;
+  return fahrenheit;
+}
+console.log(convertToF(-30))
+```
+
+
+# Reverse a String
+```
+function reverseString(str) {
+  return str.split("").reverse().join();
+}
+```
+## Second option
+
+```
+function reverseString(str) {
+
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) { 
+        newString += str[i]; // or newString = newString + str[i];
+    }
+
+    return newString; // "olleh"
+}
+
+
+console.log(reverseString('hello'))
+
+```
+
+#Factorialize a Number
+
+
+```
+function factorialize(num) {
+ let total = 1
+  for (i=1;i<=num; i++){
+        total = total * i
+  }
+  return total;
+}
+
+console.log(factorialize(5))
+
+
+```
+##My second option
+```
+function factorialize(num) {
+  if (num < 0)
+        return -1;
+  else if (num == 0)
+      return 1;
+  else {
+      return (num * factorialize(num - 1));
+  }
+}
+console.log(factorialize(5))
+
+```
+
+#Find the Longest Word in a String
+```
+function findLongestWordLength(str) {
+  var strSplit = str.split(' ');
+  var longestWord = 0;
+  for(var i = 0; i < strSplit.length; i++){
+    if(strSplit[i].length > longestWord){
+  longestWord = strSplit[i].length;
+     }
+}
+  
+  return longestWord;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+```
+
+
+ # Return Largest Numbers in Arrays
+
+ 
